@@ -1,5 +1,3 @@
-# Author: Dhaval Patel. Codebasics YouTube Channel
-
 import mysql.connector
 global cnx
 
@@ -11,6 +9,8 @@ cnx = mysql.connector.connect(
 )
 
 # Function to call the MySQL stored procedure and insert an order item
+
+
 def insert_order_item(food_item, quantity, order_id):
     try:
         cursor = cnx.cursor()
@@ -44,6 +44,8 @@ def insert_order_item(food_item, quantity, order_id):
         return -1
 
 # Function to insert a record into the order_tracking table
+
+
 def insert_order_tracking(order_id, status):
     cursor = cnx.cursor()
 
@@ -56,6 +58,7 @@ def insert_order_tracking(order_id, status):
 
     # Closing the cursor
     cursor.close()
+
 
 def get_total_order_price(order_id):
     cursor = cnx.cursor()
@@ -73,6 +76,8 @@ def get_total_order_price(order_id):
     return result
 
 # Function to get the next available order_id
+
+
 def get_next_order_id():
     cursor = cnx.cursor()
 
@@ -93,6 +98,8 @@ def get_next_order_id():
         return result + 1
 
 # Function to fetch the order status from the order_tracking table
+
+
 def get_order_status(order_id):
     cursor = cnx.cursor()
 
