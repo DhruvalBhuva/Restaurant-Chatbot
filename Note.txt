@@ -1,0 +1,15 @@
+Scopeing the features:
+-> New Order
+   - Place New order
+   - Support payment through a chat
+  
+-> Track Order
+   - Track Oder by ID
+   - Track Oder by Phone number
+   - Track Oder by Name
+
+-> Offers/ store hours
+   - Ongoing offers
+   - Upcomming offers
+   - Store hours
+
